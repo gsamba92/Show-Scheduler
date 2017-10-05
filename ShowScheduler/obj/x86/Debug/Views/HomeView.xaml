@@ -1,0 +1,102 @@
+﻿<Page
+    x:Class="ShowScheduler.Views.HomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShowScheduler.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+     
+        <Pivot x:ConnectionId='1' x:Name="rootPivot" Title="Your Shows for the Week">
+            <PivotItem Header="Sun">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>                        
+                    </Grid.RowDefinitions>
+                    <Pivot Grid.Row="0" >
+                        <PivotItem Header="8pm">
+                            <StackPanel Orientation="Horizontal">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Padding="10" Grid.Row="0" Grid.Column="0">Poster</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="1">Title</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="2">Duration</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="3">Rating</TextBlock>
+                                    <Image   Grid.Row="1" Grid.Column="0" Source="../Assets/posters/vikings.jpg"  Width="50" Height="50"></Image>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="1">Vikings</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="2">40</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="3">8.6</TextBlock>
+                                </Grid>
+                                
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="10pm">
+                            <StackPanel Orientation="Horizontal">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Padding="10" Grid.Row="0" Grid.Column="0">Poster</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="1">Title</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="2">Duration</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="0" Grid.Column="3">Rating</TextBlock>
+                                    <Image   Grid.Row="1" Grid.Column="0" Source="../Assets/posters/narcos.jpg"  Width="50" Height="50"></Image>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="1">Narcos</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="2">60</TextBlock>
+                                    <TextBlock  Padding="10" Grid.Row="1" Grid.Column="3">9.2</TextBlock>
+                                </Grid>
+
+                            </StackPanel>
+
+                        </PivotItem>
+                    </Pivot>
+                    <TextBlock Grid.Row="1">Total Shows today : 2</TextBlock>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Mon">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 2."/>
+            </PivotItem>
+            <PivotItem Header="Tue">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+            <PivotItem Header="Wed">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+            <PivotItem Header="Thr">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+            <PivotItem Header="Fri">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+            <PivotItem Header="Sat">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
+
